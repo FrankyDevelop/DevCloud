@@ -1,0 +1,29 @@
+{
+  "name": "devcloud",
+  "version": "1.0.0",
+  "description": "Proyecto crud con mongodb-Atlas desarrollado en gitpod",
+  "main": "index.js",
+  "scripts": {
+    "start":"node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FrankyDevelop/DevCloud.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FrankyDevelop/DevCloud/issues"
+  },
+  "homepage": "https://github.com/FrankyDevelop/DevCloud#readme",
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "mongoose": "^5.8.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
