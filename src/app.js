@@ -1,6 +1,7 @@
 const path = require('path');
 const express = require('express');
 const app = express();
+require("dotenv").config();
 
 //modulo exportado desde task.js
 const Task = require('./models/Task');
@@ -28,7 +29,7 @@ app.get('/', async(req, res) => {
 
 //create
 app.post('/create', async (req, res) => {
-    const nuevaTarea = new task({
+    const nuevaTarea = new Task({
         task: req.body.task,
         description: req.body.description
     })

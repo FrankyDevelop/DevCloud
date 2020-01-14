@@ -1,6 +1,9 @@
 const mongoose= require('mongoose');
+if (process.env.NODE_ENV != "production") {
+  require("dotenv").config();
+}
 
-mongoose.connect('mongodb+srv://Franky:packman@cluster0-gyova.gcp.mongodb.net/test?retryWrites=true&w=majority',{
+mongoose.connect(process.env.CONNECTION_URI,{
     useNewUrlParser:true,
     useUnifiedTopology:true
 })

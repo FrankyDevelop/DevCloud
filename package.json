@@ -4,7 +4,7 @@
   "description": "Proyecto crud con mongodb-Atlas desarrollado en gitpod",
   "main": "index.js",
   "scripts": {
-    "start":"node src/index.js",
+    "start": "node src/index.js",
     "dev": "nodemon src/index.js"
   },
   "repository": {
@@ -24,6 +24,7 @@
     "mongoose": "^5.8.7"
   },
   "devDependencies": {
+    "dotenv": "^8.2.0",
     "nodemon": "^2.0.2"
   }
 }
